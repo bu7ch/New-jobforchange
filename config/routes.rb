@@ -1,4 +1,4 @@
-RailsLandingPage::Application.routes.draw do
+NewJobforchange::Application.routes.draw do
 
   resources :invitations
 

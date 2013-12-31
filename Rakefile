@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RailsLandingPage::Application.load_tasks
+NewJobforchange::Application.load_tasks
