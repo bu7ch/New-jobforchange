@@ -18,18 +18,25 @@ et les meilleures offres au même endroit.</h4>
 <hr>
 
 	
-	<div class="centred">
+	<div class="row">
+		<div class="span6">
 		<div class="well">
 			<h3>Je suis intéressé(e) pour postuler aux offres.</h3>
-			<a href="<%= new_invitation_path %>" class="btn btn-warning btn-large">Inscrivez-vous</a>
+			<input class="required" type="email" name="email" placeholder="Veuillez indiquez votre email" >
+			<input class="btn btn-warning" type="submit" value="Inscrivez-vous"></input>
+		</div>
+		</div>
+
+		<div class="span6">
+		<div class="well">
+			<h3>Je suis intéressé(e) pour proposer une offre.</h3>
+			<input class="required" type="email" name="email" placeholder="Veuillez indiquez votre email" > 
+			<input class="btn btn-warning" type="submit" value="Inscrivez-vous"></input>
 		</div>
 	</div>
 	</div>
-		
 	
 	</h5>
 		
-		<hr>
-	
 	</h5>
 </center>
