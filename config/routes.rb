@@ -8,6 +8,10 @@ NewJobforchange::Application.routes.draw do
   devise_for :users#, :skip => [:registrations] 
 
   root :to => "home#index"
+
+  get "/entreprise/add" => "entreprise#add_new_entreprise", :as => :add_new_entreprise
+  get "/candidat/add" => "candidat#add_new_candidat", :as => :add_new_candidat 
+ 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
