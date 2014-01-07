@@ -1,4 +1,5 @@
-<%= link_to image_tag("JobForChange_logo180px.png", alt: "JFC") %>
+<center><%= link_to image_tag("JobForChange_logo180px.png", alt: "JFC") %></center>
+
 <center>
 	
 	<h1></h1>
@@ -6,9 +7,8 @@
 	<h5>
 		<br>
 	<h4>
-
-
-Avoir un emploi, des missions qui ont du sens ? Contribuer à changer le monde tout en travaillant ? Entreprendre, collaborer pour l’intérêt général ou pousser l’innovation ?</h4>
+Avoir un emploi, des missions qui ont du sens ? Contribuer à changer le monde tout en travaillant ? 
+Entreprendre, collaborer pour l’intérêt général ou pousser l’innovation ?</h4>
 
 <h4>ONG, associations, développement durable, ESS (Economie Sociale et Solidaire), économie collaborative, innovation sociale, start-ups, RSE (Responsabilité Sociétale des Entreprises) …
 La communauté de ceux qui font bouger les lignes en travaillant
@@ -18,32 +18,37 @@ et les meilleures offres au même endroit.</h4>
 <hr>
 	
 	<div class="row">
-		<form class="form-inline" role="form">
-		<div class="span6">
+		
+			<div class="span6">
+				<form class="form-inline" role="form" method="post" action="<%= add_new_candidat_path %>">
 			<div class= "well">
-		<div class="form-group">
-			<h3>Je suis intéressé(e) pour postuler.</h3>
-			<input type="email" class="form-control" id="InputEmail2" placeholder="Enter email">
-			<button class="btn btn-warning" type="button">Inscrivez-vous</button>
-		</div>
-	</div>
-	</div>
-
-
-		<div class="span6">
+				<div class="form-group">
+					<h3>Je suis intéressé(e) pour postuler</h3>
+						<input type="email" class="form-control" id="InputEmail" name="email" placeholder="Enter email" >
+						<input type="submit" class="btn btn-warning"value="Inscrivez-vous">
+						
+				</div>
+			</div>
+				</form>
+			</div>
+		
+		
+			<div class="span6">
+				<form class="form-inline" role="form" method="post" action="<%=add_new_entreprise_path%>">
 			<div class= "well">
-		<div class="form-group">
-			<h3>Je suis intéressé(e) pour proposer une offre.</h3>
-			<input type="email" class="form-control" id="InputEmail2" placeholder="Enter email">
-			<button class="btn btn-warning" type="button">Inscrivez-vous</button>
-		</div>
+				<div class="form-group">
+					<h3>Je suis intéressé(e) pour proposer une offre</h3>
+						<input type="email" class="form-control" id="InputEmail2" placeholder="Enter email">
+						<input type="submit" class="btn btn-warning"value="Inscrivez-vous">
+				</div>
+			</div>
+			</form>
+			</div>
+		
 	</div>
-	</div>
-	</f
-</form>
 
 	
-	</h5>
+</h5>
 		
-	</h5>
+</h5>
 </center>

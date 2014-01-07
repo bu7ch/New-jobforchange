@@ -9,8 +9,8 @@ NewJobforchange::Application.routes.draw do
 
   root :to => "home#index"
 
-  get "/entreprise/add" => "entreprise#add_new_entreprise", :as => :add_new_entreprise
-  get "/candidat/add" => "candidat#add_new_candidat", :as => :add_new_candidat 
+  post "/entreprise/add" => "entreprise#add_new_entreprise", :as => :add_new_entreprise
+  post "/candidat/add" => "candidat#add_new_candidat", :as => :add_new_candidat 
  
   # The priority is based upon order of creation:
   # first created -> highest priority.

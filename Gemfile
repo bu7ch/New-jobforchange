@@ -35,6 +35,7 @@ gem 'devise_invitable', '~> 1.1.0'
 gem 'simple_form'
 gem "nifty-generators", :group => :development
 gem 'rename'
+gem 'pry'
 
 
 # To use ActiveModel has_secure_password

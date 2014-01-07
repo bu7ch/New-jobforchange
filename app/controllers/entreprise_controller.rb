@@ -6,7 +6,8 @@ class EntrepriseController < ApplicationController
 	end
 
 	def add_new_entreprise
-		@new_entreprise = Entreprise.new(params)
+		@new_entreprise = Entreprise.new()
+		@new_entreprise.email = params[:email]
 		@new_entreprise.save
 		redirect_to root_path
 	end

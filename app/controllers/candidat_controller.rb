@@ -5,7 +5,9 @@ class CandidatController < ApplicationController
 	end
 
 	def add_new_candidat
-		@new_candidat  = Candidat.new(params)
+		binding.pry
+		@new_candidat  = Candidat.new()
+		@new_candidat.email = params[:email]
 		@new_candidat.save 	
 		redirect_to root_path		
 	end	
